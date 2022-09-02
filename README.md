@@ -18,6 +18,7 @@ This is the official repository for the website of Balance Pilates.
 
 1.Make sure you have git installed:
 ```git --version```
+
 2. Then simply clone this repo to your local machine:
 ```git clone  https://github.com/xxXWarMachineRoXxx/Balance-Pilates.git```
 
