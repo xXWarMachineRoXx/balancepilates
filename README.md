@@ -11,8 +11,8 @@ This is the official repository for the website of Balance Pilates.
 
 # Tools needed 
 
-- VS Code
-- Live Server Extension ( VS CODE MARKETPLACE) or any other live server extension.
+- [VS Code](https://code.visualstudio.com/download)
+- [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or any other live server extension.
 
 # Installation and Getting Started
 
