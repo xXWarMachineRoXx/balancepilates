@@ -1,11 +1,14 @@
-
+# Balance pilates
 
 ![BalancePilates Logo-02 3](https://user-images.githubusercontent.com/47086987/188142304-17716c68-dfdc-4504-848d-f861695fb2e7.svg)
 
-  &nbsp;&nbsp;&nbsp;This is the official repository for the website of Balance Pilates.
+This is the official repository for the website of Balance Pilates.
   <br>
   <br>
-  <hr>
+  
+ Promoters behind Balance Pilateshave extensive experience serving the fitness industry with a passion for fitness and wellbeing for a staggering 30 years.While our reputation and experience in the industry are widely recognized and respected, we are trusted by our clients to offer quality training.As a leader and innovator in the fitness industry, we are known to raise the bar for fitness training every time. Our fitness brand ‘PHYSIQUE’ is known across India as a benchmark for quality and workmanship that provides the perfect environment for exercise. 
+  <br>
+  
   
 # Design File link
 - [Figma Edit Link](https://www.figma.com/file/Xj77CbF7nMtO8aHsZaFSn4/Balance-Pilates-(1)?node-id=0%3A1)
