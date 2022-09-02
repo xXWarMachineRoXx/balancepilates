@@ -1,0 +1,38 @@
+{
+    "short_name": "Balance Pilates",
+    "name": "Balance Pilates PWA",
+    "icons": [
+      {
+        "src": "public/favicon.ico",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "public/favicon.ico",
+        "sizes": "192x192",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "BalancePilates512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "public/maskable_icon_x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "public/maskable_icon_x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#000000"
+  }
+  
