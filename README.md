@@ -1,6 +1,12 @@
+<hr>
 
-# Balance-Pilates
-This is the official repository for the website of Balance Pilates.
+![BalancePilates Logo-02 3](https://user-images.githubusercontent.com/47086987/188142304-17716c68-dfdc-4504-848d-f861695fb2e7.svg)
+
+  &nbsp;&nbsp;&nbsp;This is the official repository for the website of Balance Pilates.
+  <br>
+  <br>
+  <hr>
+  
 # Design File link
 - [Figma Edit Link](https://www.figma.com/file/Xj77CbF7nMtO8aHsZaFSn4/Balance-Pilates-(1)?node-id=0%3A1)
 # Tech Stack 
