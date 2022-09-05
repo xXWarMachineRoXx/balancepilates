@@ -8,6 +8,11 @@ const instructors = [
 
 function onLoad() {
   let currentCardsPerSlide = 4;
+  var A = screen.availWidth;
+  var AA = window.outerWidth;
+
+  var B = screen.availHeight;
+  var BB = window.outerHeight;
 
   function getCardsPerSlide(width) {
       if (width < 767) {
@@ -31,6 +36,16 @@ function onLoad() {
       if(width<1440){
         return 4;
       }
+      
+      
+      if (A == AA && B == BB) {
+      
+        return 4;
+    
+      }
+       
+    
+    
    
 
       return currentCardsPerSlide;

@@ -42,6 +42,7 @@ hr{
     margin:  0;
     padding: 0;
     border: 0   ;
+    overflow-y: auto!important;
 }
 .root{
     /* margin: 35px 45px!important; */
@@ -50,12 +51,39 @@ hr{
     --Body-Font: 'acumin_proextralight';
     --Primary-Color: white;
     --Seconday-Color: #6D6E70;
+    --Accent-Color: #ED1C24;
     display: flex;
     font-family: var(--Body-Font);
     align-items:center;
     justify-content : center;
 
 }
+
+.gradient_Red-white
+
+{
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3B00', endColorstr='#FFFF00', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%);
+
+}          
+            
+          
 .row{
   margin-right: 0!important;
 }
@@ -67,15 +95,16 @@ hr{
 
 
 }
-.Balance-Pilates__Header-Big-Text{
-    align-items: center;
-    display: flex;
-    top:40%;
-    position: relative;
-    font-family:  var(--Logo-Font);
-    justify-content : center;
-    font-size: 4.161640530759952vw;
-    color: var(--Seconday-Color);
+.Balance-Pilates__Header-Big-Text {
+  align-items: baseline;
+  display: flex;
+  top: 40%;
+  position: relative;
+  font-family: var(--Logo-Font);
+  justify-content: center;
+  font-size: 6.60205935796487vw;
+  color: var(--Seconday-Color);
+  margin-left: 5.015105740181269vw;
 }
 .dots{
   color: rgb(255, 0, 0);
@@ -95,7 +124,7 @@ hr{
     /* margin-top: 54px;
     
     width:  5.412296564195298vw; */
-    height: 1.3261000602772754vw;
+    height: 2.3261vw;
     margin-left:  1.8072289156626506vw; 
 
 }
@@ -125,16 +154,21 @@ hr{
 .navbar {
     /* width: 49.39903846153846vw; */
     display: flex;
-    max-width: min-content;
+    font-size: 18px;
+    color: var(--Accent-Color)!important;
     border-radius: 2rem;
     position: absolute;
     justify-content: center;
-    left: 25%;
-    right: 25%;
+    left: 15%;
+    right: 15%;
     top: 60%;
     bottom: 40%;
 
 } 
+.navbar strong{
+  letter-spacing: 2px;
+  color: var(--Accent-Color);
+}
 
 .navbar li {
   margin: 0rem 8.89423076923077vw 0 .5vw ;
@@ -220,8 +254,7 @@ hr{
   display: flex;
   justify-content: center;
   height: 539px ;
-  padding: 12rem;
-  background-image: url("https://ik.imagekit.io/demo/tr:ar-16-10,w-1.0/medium_cafe_B1iTdD0C.jpg");
+  padding: 20rem;
 
 }
 
@@ -252,34 +285,62 @@ hr{
   margin-top: 10%;
   height: 539px!important;
 }
+#carouselExampleCaptions{
+  background: url("./assets/images/Marisa.png");
+  background-size: cover;
+  color: white!important;
+  }
 #carouselExampleCaptions .circlify {
   position: relative !important;
   width: 128px;
+  filter: blur(none)!important;
+
+  color: white!important;
+
   height: 128px;
   left: 44% !important;
   right: 40% !important;
-
+  margin: 0!important;
+  display: flex!important;
+  flex-direction: column!important;
+  text-align: center!important;
 
   /* margin-right: 41.423077vw!important;
   margin-left: 42.223077vw!important; */
   margin-top: 4%;
   justify-content: center!important;
   float: none!important;
-  border: thick solid black;
+  border: thick solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 #carouselExampleCaptions .h5{
+
+  filter: blur(none)!important;
+
   display: block!important;
   margin-top: 20%!important;
   padding-top: 40%!important;
+  color: white!important;
+
 }
-#carouselExampleCaptions .carousel-item:active{
+
+.carouselExampleCaptions p{
+
+  filter: blur(none)!important;
+
+  color: white!important;
+
+}
+.carouselExampleCaptions h6{
+  color: white!important;
+}
+/* #carouselExampleCaptions .carousel-item:active{
   margin: 0!important;
   display: flex!important;
   flex-direction: column!important;
   text-align: center!important;
   
-}
+} */
 
 #TestimonialsCarousel .carousel-caption{
   position: absolute;
@@ -297,6 +358,9 @@ hr{
   color: white!important;
   /* width: 100%; */
 }
+.footer strong{
+  color: white!important;
+}
 .footer p{
   color: white!important;
 
@@ -308,7 +372,7 @@ hr{
 }
 .footer form{
   color: white!important;
-  line-height: 3rem;
+  /* line-height: 2rem; */
 }
 .footer label{
   color: white!important;

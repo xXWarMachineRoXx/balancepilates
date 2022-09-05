@@ -6,28 +6,44 @@ const cards = [
 ];
 
 function onLoad() {
-    var currentCardsPerSlide = 4;
+let currentCardsPerSlide = 4;
+  var A = screen.availWidth;
+  var AA = window.outerWidth;
 
-    function getCardsPerSlide(width) {
-        if (width < 767) {
-            currentCardsPerSlide=1;
-            return currentCardsPerSlide;
-        }
+  var B = screen.availHeight;
+  var BB = window.outerHeight;
 
-        if (width < 991) {
-            // SM
-            currentCardsPerSlide=2;
-            return currentCardsPerSlide;
-        }
+  function getCardsPerSlide(width) {
+      if (width < 767) {
+          // XS
+          return 1;
+      }
 
-        if (width < 1147) {
-            // MD
-            currentCardsPerSlide=3;
-            return currentCardsPerSlide;
-        }
+      if (width < 991) {
+          // SM
+          return 2;
+      }
 
-        return currentCardsPerSlide;
-    }
+      if (width < 1199) {
+          // MD
+          return 3;
+      }
+      if (width < 1199) {
+        // MD
+        return 3;
+      }
+      if(width<1440){
+        return 4;
+      }
+      
+      
+      if (A == AA && B == BB) {
+      
+        return 4;
+    
+      }
+      return currentCardsPerSlide;
+  }
 
     function createCard(index) {
         const card = document.createElement("div");
