@@ -21,22 +21,30 @@
 
 } 
 *{
-   text-decoration: none!important;
+  text-decoration: none!important;
   list-style-type: none;
+
 
 }
 hr{
 
   border: 1px solid white!important;
   color: white!important;
-  /* background-color: white; */
   width: 100%;
   
+}
+a{
+  text-transform: uppercase;
+}
+.nav-link{
+  color: var(--Accent-Color)!important;
 }
 .btn-primary{
   background-color: red !important;
   border-color: red!important;
 }
+
+
 .html{
     margin:  0;
     padding: 0;
@@ -55,6 +63,7 @@ hr{
     font-family: var(--Body-Font);
     align-items:center;
     justify-content : center;
+    flex-direction: column;
 
 }
 
@@ -103,7 +112,6 @@ hr{
   justify-content: center;
   font-size: 6.60205935796487vw;
   color: var(--Seconday-Color);
-  margin-left: 5.015105740181269vw;
 }
 .dots{
   color: rgb(255, 0, 0);
@@ -115,9 +123,26 @@ hr{
 
 .Products{
   margin: 1rem 2rem;
-  padding: 12rem;
+  padding: 6.75rem;
 }
+.Products-title{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 170.5%;
+  /* identical to box height, or 55px */
 
+  text-transform: uppercase;
+}
+#Products .carousel-control-next{
+  top:20%;
+  left: 95%;
+}
+#Products .carousel-control-prev{
+  top:20%;
+
+  left: -10%;
+}
 .Balance-Pilates__Header-Big-Text img{
     top:81px; 
     /* margin-top: 54px;
@@ -151,27 +176,34 @@ hr{
 }
 
 .navbar {
-    /* width: 49.39903846153846vw; */
+    width: 49.39903846153846vw;
     display: flex;
+    font-style: normal;
+    font-weight: 700;
     font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #ED1C24;
     color: var(--Accent-Color)!important;
     border-radius: 2rem;
     position: absolute;
     justify-content: center;
-    left: 15%;
-    right: 15%;
     top: 60%;
     bottom: 40%;
 
 } 
-.navbar strong{
-  letter-spacing: 2px;
-  color: var(--Accent-Color);
-}
 
 .navbar li {
   margin: 0rem 8.89423076923077vw 0 .5vw ;
   color: red;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
 
 } 
 /* .container{
@@ -186,10 +218,80 @@ hr{
   justify-content: center;
 }
 
+#Features h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 170.5%;
+  /* or 85px */
+
+  text-transform: uppercase;
+
+  color: #ED1C24;
+}
+#Features h2{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 170.5%;
+  /* or 60px */
+  
+  text-transform: uppercase;
+  
+  color: #535353;
+}
+
+#Features h3{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  text-transform: capitalize;
+
+  color: #ED1C24;
+}
+#Features p{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  /* or 136% */
+
+  text-transform: capitalize;
+
+  color: #4A4A4A;
+}
+#Features h5{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 30px;
+  /* or 136% */
+
+  text-transform: capitalize;
+
+  color: #4A4A4A;
+}
+#Features .p_special{
+  font-style: normal !important;
+  font-weight: 500!important;
+  font-size: 22px!important;
+  line-height: 30px!important;
+  /* or 136% */
+
+  text-transform: capitalize!important;
+
+  color: #4A4A4A!important;
+
+}
 #Products .card-image{
+  margin:1rem;
   border: 3px solid #ED1C24;
   border-radius: 7px;     display: flex;
   justify-content: center; padding: 20px;
+  background:white;
 }
 #Products .card-image img{ min-height: 200px;}
 .card-title{
@@ -230,6 +332,15 @@ hr{
   align-items: center;
   border-radius: 0;
 }
+#Instructors-container h2{
+  font-weight: 900;
+  font-size: 44.2182px;
+  line-height: 170.5%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 #Instructors .card,#recipeCarousel .card{
   overflow: hidden;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -239,7 +350,27 @@ hr{
 #Instructors .card img,#recipeCarousel img{
   clip-path: url("./assets/images/svg/Rectangle 22.svg")
 }
+.instructor-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.7826px;
+  line-height: 23px;
+  letter-spacing: 0.105em;
+  text-transform: capitalize;
+}
 
+.instructor-text{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.7143px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+
+  color: #838EA4;
+}
 .carousel-inner button{
   padding: 1em;
 }
@@ -270,7 +401,7 @@ hr{
   flex-direction: column;
 }
 #carouselExampleCaptions{
-  background: url("./assets/images/Marisa.webp");
+  background: linear-gradient(180deg, rgba(113, 70, 116, .75) 0%, rgba(137, 95, 103, .75) 100%),url("./assets/images/Marisa.webp");
   background-size: cover;
   font-weight: 900;
   padding: 10rem;
@@ -289,26 +420,15 @@ hr{
 
 #carouselExampleCaptions .circlify {
   position: relative !important;
-  width: 128px;
-
-  color: white!important;
-
-  height: 128px;
-  left: 44% !important;
-  right: 40% !important;
-  margin: 0!important;
-  display: flex!important;
-
-  flex-direction: column!important;
-  text-align: center!important;
-
-  /* margin-right: 41.423077vw!important;
-  margin-left: 42.223077vw!important; */
+  transform-origin: 50% top;
   margin-top: 4%;
-  justify-content: center!important;
-  float: none!important;
   border: thick solid rgb(255, 255, 255); 
   border-radius: 50%;
+}
+.Testimonials-image{
+  width: unset;
+  height: unset;
+  scale: .1;
 }
 #carouselExampleCaptions .h5{
 
@@ -386,7 +506,7 @@ hr{
   padding-top: 70px;
 }
 .footer-navbar a{
-  
+  text-transform: capitalize;
   text-decoration: none!important;
   color: white!important;
 }
@@ -399,18 +519,22 @@ hr{
   color: rgb(255, 255, 255);
   text-align: center;
 }
+.footer-logo{
+  justify-content: center;
+}
 #footer-cta-id {
     justify-content: center;
     display: flex;
     align-content: center;
     flex-direction: column;
-    margin-left: 5rem;
-    padding-right: 5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 #footer-cta-id input{
   width: 100%;
   height: 50px;
-
   background: #999;
   color: white;
   border: none;
@@ -436,9 +560,19 @@ img.footer-cta{
     height: 25rem;
   }
 }
-@media screen and (max-width:425px){
-  
-}
+@media screen and (max-width:600px){
+
 /* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   max-width: 1592px!important;
+} */
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 100%!important;
+}
+
+/* changes navbar to be visible on mobile and displays it in a col */
+/* .navbar-expand-lg .navbar-collapse {
+  display: flex!important;
+  flex-basis: auto;
+  justify-content: center;
 } */

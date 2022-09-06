@@ -48,15 +48,15 @@ let currentCardsPerSlide = 4;
     function createCard(index) {
         const card = document.createElement("div");
         //card.style.width = "18rem";
-        card.classList.add("card");
+        card.classList.add("card","bg-light");
 
-        card.innerHTML = `  <div class="card-body">
-                            <div class="card-image my-2">
+        card.innerHTML = `  <div class="card-body m-1 ">
+                            <div class="card-image ">
                                 <img src=${cards[index][2]}></img>
                             </div>
-                            <h4 class="card-title my-3 ">${cards[index][0]}</h4>
-                            <p class="card-text ">${cards[index][1]}</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <h4 class="card-title m-2 ">${cards[index][0]}</h4>
+                            <p class="card-text m-2">${cards[index][1]}</p>
+                            <a href="#" class="btn btn-primary m-2">Learn More</a>
                         </div>`;
 
         return card;

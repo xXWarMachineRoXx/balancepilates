@@ -1,8 +1,8 @@
 const instructors = [
-  ["Tommy clark","Yoga Dance","./assets/images/instructors/Tommy-Clark.png"],
-  ["Ella Claire","Yoga Dance","./assets/images/instructors/Ella-Claire.png"],
-  ["Montomegery Zo","Pilates Master","./assets/images/instructors/Montogommery-zo.png"],
-  ["Jane White","Balance Pilates Teacher","./assets/images/instructors/Jane-White.png"],
+  ["Tommy clark","Yoga Dance","./assets/images/instructors/Tommy-Clark.webp"],
+  ["Ella Claire","Yoga Dance","./assets/images/instructors/Ella-Claire.webp"],
+  ["Montomegery Zo","Pilates Master","./assets/images/instructors/Montogommery-zo.webp"],
+  ["Jane White","Balance Pilates Teacher","./assets/images/instructors/Jane-White.webp"],
   
 ];
 
@@ -60,7 +60,7 @@ function onLoad() {
                           <div class="instructor-image">
                               <img src =${instructors[index][2]}></img>
                           </div>
-                          <h4 class="instructor-title my-3 ">${instructors[index][0]}</h4>
+                          <h4 class="instructor-title  my-3 ">${instructors[index][0]}</h4>
                           <p class="instructor-text ">${instructors[index][1]}</p>
                           
                       </div>`;
