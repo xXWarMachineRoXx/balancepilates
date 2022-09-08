@@ -366,9 +366,13 @@ color: #000000;
   color: #4A4A4A!important;
 
 }
-.Instructors-title{
-  margin-top: 80px;
 
+#Instructors-container{
+  margin-top: 80px;
+  margin-bottom: 97px;
+}
+#Instructors-container .owl-nav{
+  display: none;
 }
 #Instructors-container h2{
   font-weight: 900;
@@ -426,16 +430,19 @@ color: #000000;
 
 
 
-
+/* linear-gradient(180deg, rgba(113, 70, 116, .75) 0%, rgba(137, 95, 103, .75) 100%) */
 
 #Testimonials{
-  background: linear-gradient(180deg, rgba(113, 70, 116, .75) 0%, rgba(137, 95, 103, .75) 100%),url("./assets/images/Marisa.webp");
+  background: url("./assets/images/Marisa.webp");
   background-size: cover;
-  font-weight: 900;
+  font-weight: 900; position: relative;
   /* height is temporarily set to 750px */
   padding: 2rem 10rem;
+  line-height: 30px;
   color: white!important;
   }
+#Testimonials:after{ content: ''; position: absolute; left: 0; 
+top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: -1;}
 #Testimonials .carousel-caption{
   position: relative!important;
   left:0%;
@@ -450,7 +457,7 @@ color: #000000;
 #Testimonials .circlify {
   position: relative !important;
   width: 128px;
-
+  
   transform-origin: 50% top;
   margin: 1rem;
   border: thick solid rgb(255, 255, 255); 
@@ -471,6 +478,7 @@ color: #000000;
 
 
   color: white!important;
+  line-height: 30px!important;
 
 }
 .Testimonials h6{
@@ -569,7 +577,13 @@ sticky footer
   border-radius: 50%;
   border: none;
 }
-
+#footer-cta-id .socials{
+  border-radius: 50%;
+  width: 50px;
+}
+#footer-cta-id .facebook{
+  filter: invert(100%);
+}
 #footer h5{
   color: white !important;
 }
@@ -593,7 +607,9 @@ img.footer-cta{
 
 }
 @media screen and (max-width:600px){
-
+#Testimonials{
+  padding:5rem;
+}
 /* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   max-width: 1592px!important;
 } */
