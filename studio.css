@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('public/fonts/AcumenPro/fontsfree-net-acumin-pro-extralight-webfont.woff2') format('woff2'),
+         url('public/fonts/AcumenPro/fontsfree-net-acumin-pro-extralight-webfont.woff') format('woff'),
+         url("public/fonts/AcumenPro/FontsFree-Net-Acumin-Pro-ExtraLight.ttf  ");
+    font-weight: thin;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src:   url('public/fonts/AcumenPro/acumin-bditpro-webfont.woff2') format('woff2'),
+         url('public/fonts/AcumenPro/acumin-bditpro-webfont.woff') format('woff'),
+         url('public/fonts/AcumenPro/acumin-bditpro-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('public/fonts/AcumenPro/acumin-bdpro-webfont.woff2') format('woff2'),
+       url('public/fonts/AcumenPro/acumin-bdpro-webfont.woff') format('woff'),
+       url("public/fonts/AcumenPro/acumin-bdpro-webfont.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('public/fonts/AcumenPro/acumin-itpro-webfont.ttf') format('woff2'),
+       url('public/fonts/AcumenPro/acumin-itpro-webfont.woff') format('woff'),
+       url("public/fonts/AcumenPro/acumin-itpro-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Acumin Pro';
+  src: url('public/fonts/AcumenPro/acumin-rpro-webfont.woff2') format('woff2'),
+       url('public/fonts/AcumenPro/acumin-rpro-webfont.woff') format('woff'),
+       url("public/fonts/AcumenPro/acumin-rpro-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'rounded_eleganceregular';
+    src: url('public/fonts/rounded_elegance/rounded_elegance-webfont.woff2') format('woff2'),
+         url('public/fonts/rounded_elegance-webfont.woff') format('woff'),
+         url('public/fonts/Rounded_Elegance.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+body{
+    /* margin: 35px 45px!important; */
+    --Title-Font: "rounded_eleganceregular";
+    --Logo-Font: 'rounded_eleganceregular';
+    --Body-Font: 'Acumin Pro';
+    --Primary-Color: white;
+    --Seconday-Color: #6D6E70;
+    --Accent-Color: #ED1C24;
+    font-family: var(--Body-Font);
+    background-color: white;
+}
+

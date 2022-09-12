@@ -1,6 +1,6 @@
 $(document).ready(function() {
  
-    $("#Testimonials").owlCarousel({
+    $(".testimonialSection").owlCarousel({
    
         navigation : false, // Show next and prev buttons
    
