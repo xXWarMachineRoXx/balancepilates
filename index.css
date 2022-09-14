@@ -35,6 +35,8 @@
        url("public/fonts/AcumenPro/acumin-itpro-webfont.ttf") format('truetype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
+
 }
 @font-face {
   font-family: 'Acumin Pro';
@@ -43,16 +45,31 @@
        url("public/fonts/AcumenPro/acumin-rpro-webfont.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+
 }
 @font-face {
-    font-family: 'rounded_eleganceregular';
+    font-family: 'Rounded Elegance';
     src: url('public/fonts/rounded_elegance/rounded_elegance-webfont.woff2') format('woff2'),
          url('public/fonts/rounded_elegance-webfont.woff') format('woff'),
          url('public/fonts/Rounded_Elegance.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+  font-display: swap;
 
 } 
+
+@font-face {
+  font-family: 'Molde Compressed';
+  src: url('public/fonts/molde/molde-compressed-medium-webfont.woff2') format('woff2'),
+       url('public/fonts/molde/molde-compressed-medium-webfont.woff') format('woff'),
+       url('public/fonts/molde/Molde-Compressed-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
 *{
   text-decoration: none!important;
   list-style-type: none;
@@ -85,8 +102,8 @@ hr{
 }
 .root{
     /* margin: 35px 45px!important; */
-    --Title-Font: "rounded_eleganceregular";
-    --Logo-Font: 'rounded_eleganceregular';
+    --Title-Font: "Molde Compressed";
+    --Logo-Font: 'Rounded Elegance';
     --Body-Font: 'Acumin Pro';
     --Primary-Color: white;
     --Seconday-Color: #6D6E70;
@@ -245,10 +262,15 @@ hr{
 #Products .card-image img{ min-height: 200px;}
 .card-title{
   color:#ED1C24;
-  font-weight: 700; 
-  text-transform: uppercase;
-  line-height: 1.5;
-    font-size: 18px;
+  font-style: normal;
+font-weight: 300;
+letter-spacing: 0px;
+font-size: 44px;
+line-height: 170.5%;
+/* or 68px */
+
+text-transform: uppercase;
+  font-family: var(--Title-Font);
 }
 
 #Products-carousel a{
@@ -302,38 +324,42 @@ color: #000000;
   border-radius: 0;
 }
 #Features h1{
-  font-style: bold;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 170.5%;
-  /* or 85px */
+  font-family: var(--Title-Font);
   color: var(--Accent-Color);
-  text-transform: uppercase;
+  font-style: normal;
+font-weight: 700;
+filter: saturate(.9);
+font-size: 96px;
+line-height: 98%;
+/* or 94px */
+
+text-transform: uppercase;
 }
 #Features h2{
+  font-family: var(--Title-Font);
   font-style: normal;
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 170.5%;
+  font-weight: 900;
+  font-size: 70px;
   /* or 60px */
 
   text-transform: uppercase;
+  color: var(--Seconday-Color);
 
-  color: #535353;
 }
 
 #Features h3{
   font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 30px;
-  /* identical to box height, or 115% */
-
+  font-family: var(--Title-Font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height, or 47% */
+  color: var(--Accent-Color);
   text-transform: capitalize;
-
-  color: #ED1C24;
-}
+  }
 #Features p{
+  
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -344,17 +370,18 @@ color: #000000;
 
   color: #4A4A4A;
 }
-#Features h5{
+/* #Features h5 {
+  font-family: var(--Title-Font);
   font-style: normal;
   font-weight: 900;
-  font-size: 22px;
-  line-height: 30px;
-  /* or 136% */
+  font-size: 49px;
 
+  letter-spacing: 1px;
   text-transform: capitalize;
-
-  color: #4A4A4A;
-}
+  color: #000000;
+  word-wrap: break-word;
+  
+} */
 #Features .p_special{
   font-style: normal !important;
   font-weight: 500!important;
@@ -367,6 +394,8 @@ color: #000000;
   color: #4A4A4A!important;
 
 }
+
+
 
 #Instructors-container{
   margin-top: 80px;
