@@ -114,7 +114,17 @@ hr{
 
    
             
-          
+.title-font{
+  font-family: var(--Title-Font)!important;
+  font-size:xx-large;
+  letter-spacing: 5px;
+}
+#Products .title-font{
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 51px;
+
+}
 .row{
   margin-right: 0!important;
 }
@@ -166,18 +176,47 @@ hr{
     width: 100%;
     transform: scaleX(0);
     height: 2px;
+    top: 70px;
     bottom: 0;
     left: 0;
     background-color: var(--Accent-Color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-  
+
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
+  /*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+  .btn-primary {
+    color: var(--Accent-Color);
+    background-color: white;
+    border-color: var(--Accent-Color); /*set the color you want here*/
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: white;
+    background-color: var(--Accent-Color);
+    border-color: var(--Accent-Color); /*set the color you want here*/
+  }
+  #small-navbar{
+    font-family: var(--Title-Font);
+    font-size:xx-large;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  #small-navbar{
+    font-family: var(--Title-Font);
+    font-size:xx-large;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  #small-navbar .nav-link:active{
+    color: var(--Accent-Color);
+    background-color: white;
+    border-color: var(--Accent-Color); /*set the color you want here*/
+  }
 .navbar {
     font-style: normal;
     font-weight: 700;
@@ -323,41 +362,35 @@ color: #000000;
   align-items: center;
   border-radius: 0;
 }
-#Features h1{
+#Features h1 {
   font-family: var(--Title-Font);
   color: var(--Accent-Color);
   font-style: normal;
-font-weight: 700;
-filter: saturate(.9);
-font-size: 96px;
-line-height: 98%;
-/* or 94px */
-
-text-transform: uppercase;
+  font-weight: 700;
+  filter: saturate(.9);
+  font-size: 111px;
+  line-height: 98%;
+  text-transform: uppercase;
 }
-#Features h2{
+#Features h2 {
   font-family: var(--Title-Font);
   font-style: normal;
   font-weight: 900;
-  font-size: 70px;
-  /* or 60px */
-
+  font-size: 51px;
   text-transform: uppercase;
   color: var(--Seconday-Color);
-
 }
 
-#Features h3{
+#Features h3 {
   font-style: normal;
   font-family: var(--Title-Font);
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
-  /* identical to box height, or 47% */
+  font-size: 52px;
+  line-height: 52px;
   color: var(--Accent-Color);
-  text-transform: capitalize;
-  }
+  /* text-transform: capitalize; */
+}
 #Features p{
   
   font-style: normal;
@@ -366,22 +399,16 @@ text-transform: uppercase;
   line-height: 30px;
   /* or 136% */
 
-  text-transform: capitalize;
 
   color: #4A4A4A;
 }
-/* #Features h5 {
-  font-family: var(--Title-Font);
-  font-style: normal;
-  font-weight: 900;
-  font-size: 49px;
+#Features h5 {
+ 
+    font-weight: 900;
+    text-transform: uppercase;
 
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  color: #000000;
-  word-wrap: break-word;
   
-} */
+}
 #Features .p_special{
   font-style: normal !important;
   font-weight: 500!important;
@@ -389,7 +416,6 @@ text-transform: uppercase;
   line-height: 30px!important;
   /* or 136% */
 
-  text-transform: capitalize!important;
 
   color: #4A4A4A!important;
 
@@ -406,11 +432,9 @@ text-transform: uppercase;
 }
 #Instructors-container h2{
   font-weight: 900;
-  font-size: 250%;
-  line-height: 170.5%;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #000000;
+  letter-spacing: 1px;
+  font-size: 51px;
+  color: black;
 }
 
 #Instructors .card,#recipeCarousel .card{
@@ -419,9 +443,9 @@ text-transform: uppercase;
   border-radius: 8px;
   margin: 1rem;
 }
-#Instructors .card img,#recipeCarousel img{
-  clip-path: url("./assets/images/svg/Rectangle 22.svg"); max-height: 350px;
-}
+  /* #Instructors .card img,#recipeCarousel img{
+    clip-path: url("./assets/images/svg/Rectangle 22.svg"); max-height: 350px;
+  } */
 .instructor-title{
   font-style: normal;
   font-weight: 700;
@@ -463,9 +487,9 @@ text-transform: uppercase;
 /* linear-gradient(180deg, rgba(113, 70, 116, .75) 0%, rgba(137, 95, 103, .75) 100%) */
 
 #Testimonials{
-  background: url("./assets/images/Marisa.webp");
+  background: url("./assets/images/sunset.jpg");
   background-size: cover;
-  font-weight: 900; position: relative;
+  position: relative;
   /* height is temporarily set to 750px */
   padding: 2rem 0;
   line-height: 30px;
@@ -589,8 +613,7 @@ sticky footer
     display: flex;
     align-content: center;
     flex-direction: column;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: .5rem;
     align-items: center;
     margin-bottom: 2rem;
 }
@@ -647,9 +670,19 @@ img.footer-cta{
   }
 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:990px){
 #Testimonials{
-  padding:5rem;
+  overflow: hidden;
+  padding: 2rem;
+  
+}
+.Balance-Pilates__Header-Big-Text {
+  font-size: 4.8076923076923075vw ;
+}
+.Balance-Pilates__Header-Big-Text img{
+  width: 6vw;
+  height: auto;
+  margin-left: 9px;
 }
 /* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   max-width: 1592px!important;

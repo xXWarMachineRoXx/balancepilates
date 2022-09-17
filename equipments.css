@@ -88,7 +88,7 @@ body{
 /* Internal Pages Navbar */
 body #Header .navbar-brand{
     font-family: var(--Logo-Font);
-    margin-left: 2%;
+    margin-left: 11%;
 }
 body #Header .navbar-brand img{
     width: 25px;
@@ -118,7 +118,23 @@ body #Header .navbar-brand img{
     transform-origin: bottom left;
 }
 
-
+#small-navbar{
+  font-family: var(--Title-Font);
+  font-size:xx-large;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+#small-navbar{
+  font-family: var(--Title-Font);
+  font-size:xx-large;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+#small-navbar .nav-link:active{
+  color: var(--Accent-Color);
+  background-color: white;
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
 Header{
   height: 400px;
 }
@@ -126,7 +142,17 @@ Header img{
     width: 20%;
 }
 
+.title-font{
+  font-family: var(--Title-Font)!important;
+  font-size:xx-large;
+  letter-spacing: 5px;
 
+}
+
+#equipment-hero-text-refomer .title-font{
+  font-size: 70px;
+  font-weight: 700;
+}
 .slide:hover,
 .slide:focus {
   box-shadow: inset 7em 0 0 0 var(--Accent-Color);
@@ -134,16 +160,28 @@ Header img{
 }
 
 #equipment-hero-text{
-   
-  background: linear-gradient(90deg, rgba(248, 249, 250, 1) 53%, rgba(255, 255, 255, 0) 95%),url("./assets/images/equipment-hero-img.jpg") right;
+  background: linear-gradient(90deg, rgba(248, 249, 250, 1) 53%, rgba(255, 255, 255, 0) 95%),url("./assets/images/equipment/woman-is-stretching-on-a-reformer-in-pilates-studio--1002753658-415eadc743bd49f1b23b8cf13766502c.jpg") 100%;
   background-size: contain  ;
   background-repeat: no-repeat;
   justify-content: flex-end;
 }
+#equipment-hero-text .title-font{
+  font-weight: 900;
+  font-size: 70px;
+}
+
+#Equipments-subtitles .title-font{
+
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 51px;
+    text-transform: uppercase;
+
+}
 #equipment-hero-text-refomer{
   /* font-family: var(--Title-Font)!important; */
   font-weight: 900;
-  background: linear-gradient(90deg, rgba(248, 249, 250, 1) 53%, rgba(255, 255, 255, 0) 95%),url("./assets/images/equipment/Reformer.png") 80%;
+  background: linear-gradient(90deg, rgba(248, 249, 250, 1) 53%, rgba(255, 255, 255, 0) 95%);
   background-size: contain  ;
   background-repeat: no-repeat;
   justify-content: flex-end;
@@ -251,7 +289,14 @@ img.footer-cta{
 @media (min-width: 992px){ 
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
-    margin-right: 2%;
-}
+    margin-right: 10%;
 }
 
+}
+
+@media (max-width:992px) {
+  body #Header .navbar-brand{
+    font-family: var(--Logo-Font);
+    margin-left: 2rem;
+  }
+}
