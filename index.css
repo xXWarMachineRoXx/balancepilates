@@ -111,8 +111,41 @@ hr{
     font-family: var(--Body-Font);
     background-color: white;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin-right: 10px;
+  margin-block: .2em;
 
-   
+}
+::-webkit-scrollbar:hover::after {
+  width: 10px;
+  margin-right: 10px;
+
+}
+::-webkit-scrollbar-track:hover  {
+  margin-block: .2em;
+  border-radius: 100vw;
+
+
+
+}
+::-webkit-scrollbar-track:hover {
+  margin-block: .2em;
+  border-radius: 100vw;
+  background: lightgray;
+
+
+
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ED1C24;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-block: .2em;
+
+}
             
 .title-font{
   font-family: var(--Title-Font)!important;
@@ -190,33 +223,27 @@ hr{
 }
 
   /*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
-  .btn-primary {
-    color: var(--Accent-Color);
-    background-color: white;
-    border-color: var(--Accent-Color); /*set the color you want here*/
-  }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: white;
-    background-color: var(--Accent-Color);
-    border-color: var(--Accent-Color); /*set the color you want here*/
-  }
-  #small-navbar{
-    font-family: var(--Title-Font);
-    font-size:xx-large;
-    font-weight: 900;
-    letter-spacing: 2px;
-  }
-  #small-navbar{
-    font-family: var(--Title-Font);
-    font-size:xx-large;
-    font-weight: 900;
-    letter-spacing: 2px;
-  }
-  #small-navbar .nav-link:active{
-    color: var(--Accent-Color);
-    background-color: white;
-    border-color: var(--Accent-Color); /*set the color you want here*/
-  }
+.btn-primary {
+  color: var(--Accent-Color);
+  background-color: white;
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: white;
+  background-color: var(--Accent-Color);
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
+#small-navbar{
+  font-family: var(--Title-Font);
+  font-size:xx-large;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+#small-navbar .nav-link:active{
+  color: var(--Accent-Color);
+  background-color: white;
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
 .navbar {
     font-style: normal;
     font-weight: 700;
@@ -224,14 +251,18 @@ hr{
     line-height: 22px;
     /* identical to box height */
     color: var(--Accent-Color)!important;
-    border-radius: 2rem;
     position: absolute;
     justify-content: center;
     top: 60%;
     bottom: 40%;
 
 } 
+#small-navbar {
+  border-bottom: 1px solid lightgrey;
 
+  /* border:rgba(22, 22, 26, 0.18) solid 1px; */
+
+} 
 .navbar li {
   color: var(--Accent-Color);
   font-style: normal;
@@ -591,10 +622,10 @@ sticky footer
 }
 
 .footer-navbar a{
+  font-family: var(--Title-Font)!important;
   text-transform: capitalize;
   text-decoration: none!important;
   color: white!important;
-  font-weight: 900;
 }
 #footer-navbar-id .navbar{
   top:-265.178571%;
@@ -660,6 +691,11 @@ sticky footer
 img.footer-cta{
   height: 20px;
 }
+#footer-middle-links .title-font a{
+  font-family: var(--Title-Font)!important;
+  font-size: small!important;
+}
+
 .searchBtn{ position: relative;display: block;}
 .searchBtn input[type=email]{ width: 100%;padding-left: 1rem; color: white !important;}
 

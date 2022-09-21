@@ -84,11 +84,32 @@ body{
     font-family: var(--Body-Font);
     background-color: white;
 }
+.border-primary{
+  border-color: var(--Accent-Color) !important;
+}
+.text-black{
+  color:black !important;
+}
+.bg-black{
+  background: black;
+}
+.background-accent{
+  background-color: var(--Accent-Color);
+}
+.btn-outline-primary{
+  color: white;
+    background-color:var(--Accent-Color);;
+    border-color: var(--Accent-Color); 
 
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  color: var(--Accent-Color);
+  background-color: white;
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
 /* Internal Pages Navbar */
 body #Header .navbar-brand{
     font-family: var(--Logo-Font);
-    margin-left: 11%;
 }
 body #Header .navbar-brand img{
     width: 25px;
@@ -118,6 +139,16 @@ body #Header .navbar-brand img{
     transform-origin: bottom left;
 }
 
+.btn-primary {
+  color: var(--Accent-Color);
+  background-color: white;
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: white;
+  background-color: var(--Accent-Color);
+  border-color: var(--Accent-Color); /*set the color you want here*/
+}
 #small-navbar{
   font-family: var(--Title-Font);
   font-size:xx-large;
@@ -144,15 +175,18 @@ Header img{
 
 .title-font{
   font-family: var(--Title-Font)!important;
-  font-size:xx-large;
+  font-size:70px;
   letter-spacing: 5px;
 
 }
 
 #equipment-hero-text-refomer .title-font{
-  font-size: 70px;
+  font-size: 70px!important;
   font-weight: 700;
 }
+
+
+
 .slide:hover,
 .slide:focus {
   box-shadow: inset 7em 0 0 0 var(--Accent-Color);
@@ -177,6 +211,19 @@ Header img{
     font-size: 51px;
     text-transform: uppercase;
 
+}
+.text-accent{
+  color:#ED1C24 !important;
+}
+.letter-spacing-normal{
+  letter-spacing: normal !important;
+}
+.font-h1{
+  font-size: 51px !important;
+}
+#Benefits .title-font{
+  font-size: 51px!important;
+  font-weight: 700;
 }
 #equipment-hero-text-refomer{
   /* font-family: var(--Title-Font)!important; */
@@ -289,14 +336,7 @@ img.footer-cta{
 @media (min-width: 992px){ 
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
-    margin-right: 10%;
 }
 
 }
 
-@media (max-width:992px) {
-  body #Header .navbar-brand{
-    font-family: var(--Logo-Font);
-    margin-left: 2rem;
-  }
-}
