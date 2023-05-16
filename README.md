@@ -1,7 +1,7 @@
 ![BalancePilates Logo-02 3](https://user-images.githubusercontent.com/47086987/188142304-17716c68-dfdc-4504-848d-f861695fb2e7.svg)
 
 # Balance pilates
-
+[Visit Site](http://bitwalls.me/Balance-Pilates/index.html)
 This is the official repository for the website of Balance Pilates.
   <br>
   <br>
